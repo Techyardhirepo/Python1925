@@ -10,15 +10,25 @@
 customersList=["Ravi","Surya","Sarvesh","Shakeer","Ravi","Surya","Sarvesh","Shakeer","Ravi",
                "Surya","Sarvesh","Shakeer","Ravi","Surya","Sarvesh","Shakeer","Ravi","Surya",
                "Sarvesh","Shakeer","Ravi","Surya","Sarvesh","Shakeer","Ravi","Surya","Sarvesh",
-               "Shakeer","Ravi","Surya","Sarvesh","Shakeer"]
+               "Shakeer","Ravi","Surya","Customer","Sarvesh","Shakeer"]
 
 
 taskList ={"Attend Class", "Take Break", "Practice","Lunch","Practice","Have Tea or Snacks",
            "Practice","Dinner","Sleep"}
 
-for customer in customersList :
+for customer in customersList :    
+    
     print(customer)
+    if customer== 'Customer1':
+        break
+    
+else:
+    print("loop successfully completed")
 
+
+
+
+'''
 for task in taskList :
     print(task)
     if task== "Attend Class" :
@@ -40,7 +50,7 @@ for task in taskList :
 
 
 
-'''
+
 customersList[0]
 customersList[1]
 customersList[2]
@@ -49,7 +59,7 @@ customersList[4]
 customersList[5]
 customersList[6]
 customersList[7]
-'''
+
 
  
 
@@ -70,7 +80,7 @@ for name,marks in studentsdict.items() :
         print(f'{name} passed in exam with {marks} marks')
 
 
-'''someChar ="8"
+someChar ="8"
 for i in range(1,15) :
     print( someChar*i )
     '''
@@ -83,6 +93,7 @@ for number in range(startNumber,endNumber) :
   for i in range(1,11) :
     print(f'{number} X {i}== {number*i}')
 '''
+'''
 studentName= "Sai Ram Shankar"
 count = 0;
 for c in studentName :
@@ -93,7 +104,7 @@ print(count)
 # str,list, tupple
 # set,frozenset,Dict
 
-
+'''
 
 
 
