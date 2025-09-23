@@ -1,161 +1,81 @@
-#Conversion of data type to another type is type casting
-
-#1. Implicit type casting
-#2. Explicit Type Casting
+# Type Casting or Type Converion
 
 
-x= 20; # lower type data type
-y= 12.5; # float data type comparing with int
+# 1. Impilicit Type Casting : Type Conversion will be done automatically by python
+# 2. Explicit Type Casting
 
 
-# int --> Float --> Complex
+number1 = 12.5 # int
+number2 = 3+4j # float
 
 
-v= 2+3j;
+number3 = number1+number2
 
-#print()
-z=x+y;
+print('type of number3==',number3)
 
-s= v+z;
+number4= 100.256
 
-#print("Type of Z is", type(z));
+number5= int(number4)
 
-#print("Type of S is", type(s));
+print('number5',number5)
 
+number6= float(number5)
 
-#2 .Explicit Type Casting
+print('number6', number6)
 
-#int()
-
-someValue= 23.45;
-print("Convert float to Int",int(someValue));
-
-studentName="134";
-
-print("Convert String to Int",int(studentName));
-
-#someComplexValue= 3+5j;
-
-#print("Convert Complex Type to Int",int(someComplexValue));
-
-#float()
-
-studentnarksPercentage= 70;
-
-
-someStringvalue="Surya";
-
-someNumberString="123";
-
-
-#Numeric Type : Type Conversion
-
-#String --> Int
-#Float --> Int   245.32 --> 245
-#String --> Float  "243.45"
-#int --> Float
-#String --> Complex
-#int --> Complex
-#Float --> Complex
-
-
-int("10")
-float("10.25")
-str(10.25)
-complex(10.25)
+print('Convert to Complex', complex(number6) )
 
 
 
-#String Type or Text Based Conversion
+someString ="256"
 
-#int --> String 
-#Float --> String
-#List --> String
-#Dict --> String
+someIntValue= complex(someString)
 
-str(100) # "100"
-str(100.234) #"100.234"
-
-lstNames= ["Vinith", "Sai","Neha","Meenakshi","Nandini"]
-str(lstNames); "['Vinith', 'Sai','Neha','Meenakshi','Nandini']"
+print('someIntValue====>',someIntValue)
 
 
+number8=2000.6565
+
+strNumber8 = int(number8)
+
+print('strNumber8', strNumber8)
+
+
+studentsList = ["Vinay","Vinith","Sathish","Anil","Linga","Sathish"]
+
+studentsSet= set(studentsList)
+
+print('studentsSet===', studentsSet)
+
+studentsList= list(studentsSet)
+
+print('StudentList===', studentsList)
+
+print('StudentList value by Index===', studentsList[1])
+
+
+studentTupple= tuple(studentsList)
+
+print('studentTupple===', studentTupple)
+
+
+set, list, tuple, dict
+
+numbersList= [(1,3),(2,4),(3,4),(5,6),(7,8)]
+
+someDictIdentifier= dict(numbersList)
+
+print('someDictIdentifier===', someDictIdentifier)
+
+numbersList= tuple(someDictIdentifier)
+
+print('numbersList Dict to tuple', numbersList)
 
 
 
-#print("Convert int to Float",float(studentnarksPercentage));
-
-somefloatValue= 20.45
-
-#print("int to COmplex",complex(somefloatValue))
-
-
-
-#Boolean Type
-
-someBoolValue= True;
-
-print("Convert Bool to String", str(someBoolValue))
-print("Convert Bool to int", int(someBoolValue))
-
-# 1 = True
-# 0 = False
-
-print("Convert Bool to float", float(someBoolValue))
-
-print("Convert Bool to float", complex(float(someBoolValue)))
-
-someString= "";
-
-print("Convert string to bool", bool(someString) );
 
  
 
-#None
-
-someNoneValue=None;
-
-strNone= str(someNoneValue)
-boolNone=bool(someNoneValue);
-strNone= str(someNoneValue)
-print("None to Bool",boolNone, type(boolNone))
-
-
-
-list
-set
-tuple
-dict
-
-
-#Idnetifiers/Variables - Done
-#Data Types  - Done
-#Type Casting - Done      
-#Operators -
-#Conditional Statement
-#Control Statements  
-#Loops 
-#OOPS
-
-
-
-
-
-# 9 hours - 1 hour  - 1 hour
-
-
-#24 hours
-
-# 8 - Work
-
-# 8 - Peaceful sleep
-
-# 8 - With family and Friends or entertarinment
-
-#  Subject - Technology
-
-
-#first Learn, Then Remove L
 
 
 
@@ -163,10 +83,4 @@ dict
 
 
 
-
-
-
-
-
-   
 

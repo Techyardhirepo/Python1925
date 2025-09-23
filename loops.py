@@ -1,97 +1,105 @@
-# Loops in Python
+# Loop : repeat execution of a code block
 
 
-# For Loop
-# While
+# 1. for loop : when we know how many times we want to repeat the code execution
+# 2. while : when we dont know number of times to repeat the code execution  and we only condition and
+#     this will be executed untill that condition statisfies
 
-#range() # which generates sequence of Numbers
+# when ever we have collections and if we need to reapeat code execution. we can simply blindly go for for loop
 
-#range(1,100, 1)
+customersList=["Ravi","Surya","Sarvesh","Shakeer","Ravi","Surya","Sarvesh","Shakeer","Ravi",
+               "Surya","Sarvesh","Shakeer","Ravi","Surya","Sarvesh","Shakeer","Ravi","Surya",
+               "Sarvesh","Shakeer","Ravi","Surya","Sarvesh","Shakeer","Ravi","Surya","Sarvesh",
+               "Shakeer","Ravi","Surya","Sarvesh","Shakeer"]
+
+
+taskList ={"Attend Class", "Take Break", "Practice","Lunch","Practice","Have Tea or Snacks",
+           "Practice","Dinner","Sleep"}
+
+for customer in customersList :
+    print(customer)
+
+for task in taskList :
+    print(task)
+    if task== "Attend Class" :
+        print("open Laptop")
+        print("Login to Teams")
+        print("Join Session")
+    if task== "Take Break" :
+        print("Shut Down laptop for 30 mins")
+    if task== "Practice" :
+        print("Open Laptop")
+        print("open VS code")
+        print("write some code for practice")
+
+#for identifier in collectionIdentifierName :
+
+
+
+
+
+
+
 '''
-startNumber= int(input("Enter Start Number: "))
-endNumber= int(input("Enter End Number: "))
-difference=int(input("Enter Step Difference: "))
-
-if startNumber<endNumber:
-       for i in range(startNumber,endNumber,difference):
-        print(i)
-else :
-    print('Start number should not be less than end Number')
-
-     
-    while startNumber <= endNumber:
-        print(startNumber)
-        startNumber += difference; # i= i+1
-
-
+customersList[0]
+customersList[1]
+customersList[2]
+customersList[3]
+customersList[4]
+customersList[5]
+customersList[6]
+customersList[7]
+'''
 
  
-  
-# for loop
-# while
 
-studnetsMarks= [45,25,96,85,72,88,44,15,90,62]
+studentsdict= {"Ravi" : 85,
+        "Surya" : 30,
+        "Anil" : 75,
+         "Vinith" : 80,
+          "Sathish" : 83,
+           "Neha" : 79,
+           "Sai Ram": 81,
+           "Swapnaam": 83}
 
-for marks in studnetsMarks:
-    if marks>40 :
-        print("pass")
+for name,marks in studentsdict.items() :
+    print(name ,marks)
+    if marks <= 35 :
+        print(f'{name} failed in exam with {marks} marks')
     else :
-        print('fail')     
+        print(f'{name} passed in exam with {marks} marks')
+
+
+'''someChar ="8"
+for i in range(1,15) :
+    print( someChar*i )
+    '''
 
 '''
+#number = int(input("Enter Table Number : "))
+startNumber= int(input("Enter start Number : "))
+endNumber = int(input("Enter End Number : "))
+for number in range(startNumber,endNumber) :
+  for i in range(1,11) :
+    print(f'{number} X {i}== {number*i}')
 '''
-atmPin='1234'
-enteredAtmPin=  input("Enter your PIN :")
-count=1
-while atmPin!=enteredAtmPin and count < 3 :
-    enteredAtmPin= input("Enter your PIN :")
+studentName= "Sai Ram Shankar"
+count = 0;
+for c in studentName :
     count +=1
 
-
-if count==3 and atmPin != enteredAtmPin :
-    print("your card is blocked")
-else :
-    print("Home Screen")
-'''
-'''
-count=0
-while True :
-    count+=1
-    if count < 10000 :
-        pass
-        print('Count:',count)
-    
-
-#Control Statements in loops
+print(count)
+# can be used on sequence type
+# str,list, tupple
+# set,frozenset,Dict
 
 
-#continue -> skips executes next statements in th loop
-#break --> stops execution of loop and exiting the loop
-#pass --> do nothiing
-
-'''
-#walrus
-
-# for loop is used mostly on sequnces like string, list,set,tuple,dict or frozen
-# while loop is used when we need to execute some code until some condtion is false
-
-#while loop with else
-#for loop with else
-
-numbers= [10,25,30,5,12]
-'''
-for number in numbers:
-    if(n := number) >20 :
-        print(n);
-while (n := numbers) > 20:
-    print(n)
-     '''
-enteredString= input("enter string:  ")
-
-if (length := len(enteredString)) > 5 :
-    print("string length is",length)
 
 
+
+     
+
+      
 
 
 
