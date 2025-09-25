@@ -57,7 +57,3 @@ for _ in range(100) :
  number2=200
 
  number1,number2= number2,number1
-
-    
-
-
