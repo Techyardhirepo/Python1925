@@ -5,25 +5,31 @@
    # Exception
 
 
-'''
+#Exceptions Handling
+
+
+#try : the code which has to be executed
+#except : if any exception comes in the code which has written in try block
+#else : this block exceute only when try block executes without any exception
+#finally : this will execute everytime which is used for dispoing of resources
+
+
+
+
 try:
-    code1
-    code2
-    code3
-    code4
+  number1= int(input("Enter Number 1"))
+  number2= int(input("Enter Number 2"))
+  # create a file
+  number3=number1/number2
+  print('code1')
 
-except:
-    code1
-    code2
+except Exception as ex:
+  print(f'Something went wrong {ex}')
 else:
-    code1
-    code2
+  print('Try Block executed successfully')
 finally:
-    code1
-    code2
+ print('Exception handling done')
 
-
-'''
 
 
 firstNumber= int(input("enter Number: "))
