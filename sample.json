@@ -1,0 +1,49 @@
+{
+  "name" : "Sai Ram",
+  "Role" : "Developer",
+  "Skills" : ["python","HTML","CSS","Javascript"]
+}
+
+
+{
+
+ "settings" : {
+    "Netwrok Settings" : {
+        "Data Settings" :{
+            "Mobile Data Status" : "OOF"
+
+        },
+        "Wifi Settings": {
+
+        }
+    },
+    "Display Settings"
+
+ }
+
+}
+
+
+{
+   "pay":{
+
+      "Amount" :500,
+      "ToPayUPI" : "test@axis.in"
+   }
+
+
+}
+
+
+
+{
+  "Payment":{
+    "status":"Success",
+    "TxnId" : "rtrfdtfdsfdf56356776",
+    "PaymentType" :"Wallet"
+  }
+
+
+}
+
+

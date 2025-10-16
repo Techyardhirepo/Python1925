@@ -28,7 +28,7 @@ for row in reader:
     print(row)
 
 file.close()
-
+ 
 
 file= open("studentnames.csv","a",newline="")
 writer=csv.writer(file)
