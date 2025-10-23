@@ -46,5 +46,27 @@ def methodname() :
 
 
 
+# Identifiers
+# Data Types
+# Operators
+# Type Casting/ Conversion
+# Conditional Statements
+# Loops
+# Exception Handling
+# File Handling
+# OOPS ( Object Oriented Programming System)
+    # 1. Encapsulation
+    # 2. Abstraction
+    # 3. Polymorphism
+    # 4. Inheritance
 
-    
+
+# Class : User defined Data Type
+          # Contains attributes/Properties and Methods 
+
+  # Attributes/Proprties
+  # Methods : Re usable Code Block also called as Funtion
+
+
+
+
