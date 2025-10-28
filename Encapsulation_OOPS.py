@@ -8,7 +8,7 @@ class Bank :
         self.__personName=personName
         self.__Balance=BankBalance
 
-      def __showAccountDetails(self):
+      def showAccountDetails(self):
           print(f' Account Number {self.__accountNumber} and Name : {self.__personName} and Bank balance {self.__Balance}')
 
       @classmethod
@@ -30,13 +30,23 @@ objBank= Bank('1234567','Anil',20000)
 #objBank.__showAccountDetails()
 objBank.depositAmount(-10000)
 
-#objBank.__showAccountDetails()
+objBank.showAccountDetails()
 
 objBank.withdrawAmount(5000)
 #print('Bank Name:'+ Bank.bankName)
 
-objBank.__showAccountDetails()
+#objBank.__showAccountDetails()
 
 #Bank.showBankDetails()
 
 #print('Bank Name:'+ Bank.bankName)
+
+
+# private Identifiers
+     #Class level
+     # instance level
+# Public Identifiers
+
+
+# private methods
+# public methods
