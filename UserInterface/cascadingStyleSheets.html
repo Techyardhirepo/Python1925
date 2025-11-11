@@ -1,0 +1,93 @@
+<!---selector {
+    property : value;
+}
+
+
+. {
+
+}
+   element Type
+  Class
+  Id
+  Group
+
+
+  1. Inline Css
+  2. Internal Css
+  3. External Css
+
+-->
+
+
+
+<!Doctype html>
+
+<html>
+  
+   <head>
+
+     <style>
+        
+        body{   /* Element Type Selector  */
+            background-color: brown;
+            display: flex;
+             top: 100px;
+             margin-right: 500px;
+             align-items: center;
+             justify-content: center;
+        }
+        
+        div {  /* Element Type Selector  */
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        }
+         
+        .textbox{  /* Class Selector  */
+             background-color: rgb(61, 42, 42);
+             height: 300px;
+            
+        }
+
+        #txtLastName{  /* ID Selector  */
+            height: 300px;
+        }
+
+
+     </style>
+
+   </head>
+   
+   <body>
+
+<div style="display: flex; 
+  justify-content: center; /* Centers horizontally */
+  align-items: center;">
+    
+    <div style="display: grid;
+  grid-template-columns: 1fr; /* Creates a single column */
+  gap: 10px; /* Adds space between inputs */
+  /* Optional: Center horizontally within the div */
+  justify-items: center; align-items: center; background-color: blue; margin-top: 20%; margin-bottom: 50%;">
+  <div > 
+      <label style="font-size: 20px; color: aliceblue;">First Name</label>
+      <input type="text" class="textbox">
+    </div>
+    <div>
+      <label style="font-size: 20px; color: aliceblue;">Last Name</label>
+      <input type="text" id="txtLastName" class="textbox">
+    </div>
+    <div>
+      <label style="font-size: 20px; color: aliceblue;">Contact Number</label>
+      <input type="text" class="textbox">
+    </div>
+    <div>
+      <label style="font-size: 20px; color: aliceblue;">Email</label>
+      <input type="text" class="textbox">
+    </div>
+   </div>
+
+   </div>
+   </body>
+
+
+
+</html>
