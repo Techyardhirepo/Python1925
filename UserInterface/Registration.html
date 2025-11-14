@@ -4,6 +4,138 @@
       <title> User Registration</title>
       <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
 
+
+      <script>
+          // DOM - Document object Model
+
+          
+          
+           window.onload = init;
+
+            function init(){
+               debugger;
+                var emailInput= document.getElementById("txtemail");
+                emailInput.addEventListener("input",function(){
+                    if(this.value.length > 50){
+                      alert('only 50 characters allowed in Email');
+                    }
+              });
+            }
+
+
+          //Identifiers/Variables
+          // Data Types
+          // Type Conversion
+          // Operators
+          // Conditional Statements
+          // Loops
+          // Function or Methods
+          // File Handling
+          // Exception handling
+          // OOPS
+              // 1. Polymorhism
+              // 2. Encapsulation
+              // 3. Inheritance
+              // 4. Abstraction
+
+
+
+
+         //Internal CSS
+         //External CSS
+         
+
+         //Variables in Javascript
+
+         // let - value can be changed
+         // const - value cant be changed
+         // var - old way to delcare variable
+
+        
+
+         let name="techyardhi";
+         const Address="KPHB,Hyderabad";
+         var state="Telangana";
+         let age = 25;
+         //Data Types
+         // String 
+         // Number
+         // Boolean
+         // Null :null
+         // Object {key : "value"}
+         // Array [1,2,3]
+
+
+         // Operators
+         // Arithnetic (+, - , /,%)
+         // Assignment (= += *= /=)
+         // Comparison (==, === , !=,!==,> <,>=,<=)
+         // Logical
+
+
+         /*def someMethodName :
+             print('')*/
+        alert(sayHello('Sai Ram'))
+         function sayHello(name){
+            return "hello..... "+name;
+        }
+
+        //Conditional Statements
+        // if
+        // if else
+        // if else if
+        // Nested if
+        // Switch Case
+
+        if (age>=18){
+
+        }
+        else{
+
+        }
+
+        // loops
+        //for loop
+        // While loop
+
+        for(let i=0; i<=10;i++){
+          console.log(i);
+        }
+        let j=0;   
+        while(j<=15){
+           console.log(j);
+           j++
+        }
+      
+        const lstNames= ["Vinith", "Sai Ram","Satish"];
+
+        for(let sName of lstNames){
+           console.log(sName);
+        }
+       
+        // for insert data into array - push
+        // for removing data from array - pop
+        // for removing first elemant - shift
+
+
+        let person = [{
+            name : "Satish",
+            age:'20',
+            city: 'Hyderabad'
+        },{
+            name : "Vinith",
+            age:'21',
+            city: 'Hyderabad'
+        },{
+            name : "Sai Ram",
+            age:'22',
+            city: 'Hyderabad'
+        }];
+
+         alert('Hello,'+ name +' '+ Address+ ' '+ state);
+         console.log(name +' '+ Address+ ' '+ state);
+      </script>
+
       <style>
        
         body {
@@ -20,7 +152,7 @@
     padding: 16px;
     background-color: white;
     width: 400px;
-    height: 380px;
+    min-height: 500px;
     margin-left: 500px;
 }
 
@@ -90,7 +222,7 @@ a {
     <hr>
 
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    <input type="text" placeholder="Enter Email" name="email" id="txtemail" required>
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
