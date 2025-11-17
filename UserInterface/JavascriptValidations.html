@@ -1,0 +1,177 @@
+<!--
+
+# Class
+# Id
+# Type
+# *
+
+-->
+
+<html>
+  <head>
+
+     <script>
+
+     function validateDateName(txtvalue){
+        debugger;
+        var fullName= txtvalue.value;
+        var namePattern = /^[a-zA-Z]+$/;
+            if(fullName.length>20){
+                   const fulNameError= document.getElementById('fullNameError');
+                   fulNameError.innerText="Length should not be greater than 20 characters";
+                   isValid=false;
+            }
+            else if (!namePattern.test(fullName)){
+                   const fulNameError= document.getElementById('fullNameError');
+                   fulNameError.innerText="Only alphabets allowed in name";
+                   isValid=false;
+            }
+            else{
+                   const fulNameError= document.getElementById('fullNameError');
+                   fulNameError.innerText="";
+                   isValid=true; 
+            }
+     }
+
+      function validateForm(){
+        event.preventDefault();
+        document.getElementById('fullNameError').innerText="";
+         
+        let isValid = true;
+        debugger;
+        const fullName = document.getElementById('txtfullName').value.trim();
+        
+        if(fullName==''){
+            const fulNameError= document.getElementById('fullNameError');
+            fulNameError.innerText="Enter Name";
+            isValid=false;
+        }
+        else{
+            var namePattern = /^[a-zA-Z]+$/;
+            if(fullName.length>20){
+                   const fulNameError= document.getElementById('fullNameError');
+                   fulNameError.innerText="Length should not be greater than 20 characters";
+                   isValid=false;
+            }
+            if (!namePattern.test(fullName)){
+                   const fulNameError= document.getElementById('fullNameError');
+                   fulNameError.innerText="Only alphabets allowed in name";
+                   isValid=false;
+            }
+        }
+
+        const ageValue= document.getElementById('txtage').value;
+        if(ageValue>100){
+                   const ageError= document.getElementById('ageError');
+                   ageError.innerText="Age should not be greater than 100";
+                   isValid=false;
+            
+        }
+
+
+
+         if(isValid==false){
+            alert('Please enter valid data');
+         }
+      }
+
+
+
+     </script>
+
+      <style>
+        body{
+            background-color: rgb(112, 110, 114);
+        }
+        .alignDenter {
+ 
+    /* display: flex; */
+    /* align-items: center; */
+        margin-left: 248px;
+
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+        form div {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="number"], select, textarea {
+            width: 50%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+    </style>
+
+  </head>
+
+  <body>
+    
+    <form id="registrationForm">
+      <div class="alignDenter">
+        <div>
+            <label for="txtfullName">Full Name:</label>
+            <input type="text" id="txtfullName" onkeyup="validateDateName(this)" onchange="validateDateName(this)" name="fullName">
+            <span class="error" id="fullNameError"></span>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <span class="error" id="emailError"></span>
+        </div>
+
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="txtage" name="age">
+            <span class="error" id="ageError"></span>
+        </div>
+
+        <div>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <span class="error" id="genderError"></span>
+        </div>
+
+        <div>
+            <label>Interests:</label><br>
+            <input type="checkbox" id="interest1" name="interests" value="coding">
+            <label for="interest1">Coding</label><br>
+            <input type="checkbox" id="interest2" name="interests" value="reading">
+            <label for="interest2">Reading</label><br>
+            <input type="checkbox" id="interest3" name="interests" value="sports">
+            <label for="interest3">Sports</label>
+            <span class="error" id="interestsError"></span>
+        </div>
+
+        <div>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+        </div>
+
+        <div>
+            <button onclick="validateForm()">Register</button>
+        </div>
+     </div>
+    </form>
+
+
+
+
+
+  </body>
+
+
+
+</html>
