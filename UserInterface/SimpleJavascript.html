@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+
+    <title></title>
+    <!--fav icon-->
+    <style>
+         body {
+            background-color: cornsilk;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         }
+
+         .container{
+            margin-left: 25%;
+            margin-top: 25%;
+            margin-right: 25%;
+            margin-bottom: 25%;
+         }
+         .formControl{
+           
+            padding-bottom: 20px;
+
+         }
+
+    </style>
+    <script>
+        
+           var nameRegExp= /^[a-zA-Z\s'-]+$/;
+           function validateName(txtControl){
+
+                if(!nameRegExp.test(txtControl.value)){
+                    alert('Enter Valid Name')
+                }
+
+            }
+
+
+         function clickButton(){
+            //alert('button Clicked');
+            // Id
+            //Class
+            // Type
+           
+
+            var firstNameControl= document.getElementById('txtFirstName');
+            var firstNameValue= firstNameControl.value;
+            debugger;
+            if(firstNameValue==""){
+                alert('Enter first name');
+                return;
+            }
+
+           
+
+            if(!nameRegExp.test(firstNameValue)){
+                alert('Enter valid first name');
+                return;
+            }
+
+
+            //alert('First Name:' + firstNameValue);
+            
+            var lastNameControl= document.getElementById('txtLastName');
+            var lastNameValue= lastNameControl.value;
+            //alert('Last Name:' + lastNameValue);
+
+            if(lastNameValue==""){
+                alert('Enter Last name');
+                return;
+            }
+
+            if(!nameRegExp.test(lastNameValue)){
+                alert('Enter valid Last name');
+                return;
+            }
+
+            var emailControl= document.getElementById('txtEmail');
+            var emailValue= emailControl.value;
+            //alert('Email:' + emailValue);
+           
+            if(emailValue==""){
+                alert('Enter Email');
+                return;
+            }
+            
+
+            alert('First Name :'+ firstNameValue +'\n' + 'Last Name :'+ lastNameValue+ '\n'+ 'Email :'+ emailValue);
+           
+
+         }
+
+    </script>
+
+   </head>
+
+   <body>
+    <div class="container">
+         <div class="formControl">
+             <div>
+                <label>First Name</label>
+             </div>   
+            <div>
+                <input type="text" id="txtFirstName" onkeyup="return validateName(this);">
+            </div>
+         </div> 
+        <div class="formControl">
+          <div>
+            <label>Last Name</label>
+          </div>   
+          <div>
+            <input type="text" id="txtLastName" onkeyup="return validateName(this);">
+          </div>
+        </div>
+        <div class="formControl">
+          <div>
+            <label>Email</label>
+          </div>   
+          <div>
+            <input type="email" id="txtEmail">
+          </div>
+        </div>
+        <div>
+          <button onclick="clickButton()">Save</button>
+       </div>
+    </div>
+     
+
+
+   </body>
+
+
+</html>
