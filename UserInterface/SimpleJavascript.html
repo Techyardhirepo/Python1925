@@ -25,7 +25,40 @@
 
     </style>
     <script>
-        
+           window.onload=function(){
+
+            //document.addEventListener("contextmenu",function(event){
+              // event.preventDefault(); 
+              // alert('Right Click Disabled');
+            //});
+
+              //txtFirstName
+              debugger;
+            const txtInputs= document.getElementsByClassName('nameinput');              
+            for(let i=0;  i<txtInputs.length; i++ ){
+                txtInputs[i].addEventListener('keydown', function(event){
+                debugger;
+                  //alert(event.key);
+                  console.log(event.key);
+                  if(event.key>=0 && event.key <=9){
+                    event.preventDefault();
+                  }      
+              });
+               debugger;
+               txtInputs[i].addEventListener('paste', function(event){ 
+                    event.preventDefault(); 
+              });
+
+            }
+
+           /*   txtInput.addEventListener('keydown', function(event){
+                debugger;
+                  if(event.key>=0 && event.key <=9){
+                    event.preventDefault();
+                  }
+                        
+              });*/ 
+           }
            var nameRegExp= /^[a-zA-Z\s'-]+$/;
            function validateName(txtControl){
 
@@ -101,7 +134,7 @@
                 <label>First Name</label>
              </div>   
             <div>
-                <input type="text" id="txtFirstName" onkeyup="return validateName(this);">
+                <input type="text" class="nameinput" id="txtFirstName">
             </div>
          </div> 
         <div class="formControl">
@@ -109,7 +142,7 @@
             <label>Last Name</label>
           </div>   
           <div>
-            <input type="text" id="txtLastName" onkeyup="return validateName(this);">
+            <input type="text" class="nameinput" id="txtLastName">
           </div>
         </div>
         <div class="formControl">
@@ -117,7 +150,7 @@
             <label>Email</label>
           </div>   
           <div>
-            <input type="email" id="txtEmail">
+            <input type="email" class="nameinput" id="txtEmail">
           </div>
         </div>
         <div>
