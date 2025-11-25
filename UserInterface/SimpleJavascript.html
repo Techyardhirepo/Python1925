@@ -10,6 +10,10 @@
             background-color: cornsilk;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
          }
+         
+         .txtbackground{
+            background-color: red;
+         }
 
          .container{
             margin-left: 25%;
@@ -42,6 +46,9 @@
                   console.log(event.key);
                   if(event.key>=0 && event.key <=9){
                     event.preventDefault();
+                    this.classList.add('txtbackground');
+                  }else{
+                    this.classList.remove('txtbackground');
                   }      
               });
                debugger;
